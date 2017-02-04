@@ -1,0 +1,9 @@
+[user]
+	name = T K Sourabh
+	email = sourabhtk37@gmail.com
+[color]
+	ui = true
+[alias]
+	s = status -s
+[merge]
+	tool = meld
