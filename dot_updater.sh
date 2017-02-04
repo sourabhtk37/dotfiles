@@ -4,7 +4,7 @@
 
 var="cp $HOME/."
 
-# copies dotfiles into the dir where this file is residing
+# copies dotfiles into the current directory
 for dot in "tmux.conf" "gitconfig" "zshrc" "vimrc"
 do
 	eval $var$dot $HOME/work/dotfiles 
@@ -17,6 +17,11 @@ echo "dot files updated $(eval $commit_message)" >> template.txt
 # commits the changes
 git add .
 git commit --file template.txt
-git push origin master
 
+# removal necessary else the commit_message won't 
+# be updated with new message as bash appends to
+# the end of the file
 rm template.txt
+
+# via ssh so won't ask for authentication
+git push origin master
