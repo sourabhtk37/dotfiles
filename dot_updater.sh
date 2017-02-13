@@ -10,11 +10,12 @@ do
 	eval $var$dot /home/sourabh/work/dotfiles 
 done
 
-# get to the 
+# get to the dotfiles folder to reach a git 
+# directory else git commands wont work
 cd /home/sourabh/work/dotfiles
 
 # retrieves the current day,year for commit message
-commit_message="date | cut -d ' ' -f 2,4,6"
+commit_message="date | cut -d ' ' -f 2,3,6"
 echo "dot files updated $(eval $commit_message)" >> template.txt
 
 # commits the changes
