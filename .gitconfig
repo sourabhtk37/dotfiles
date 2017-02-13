@@ -5,5 +5,6 @@
 	ui = true
 [alias]
 	s = status -s
+	lg = log --graph --color --decorate --all
 [merge]
 	tool = meld
