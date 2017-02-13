@@ -14,7 +14,7 @@ done
 cd /home/sourabh/work/dotfiles
 
 # retrieves the current day,year for commit message
-commit_message="date | cut -d ' ' -f 2,4,6"
+commit_message="date | cut -d ' ' -f 2,3,6"
 echo "dot files updated $(eval $commit_message)" >> template.txt
 
 # commits the changes
