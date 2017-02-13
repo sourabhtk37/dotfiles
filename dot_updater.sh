@@ -10,7 +10,8 @@ do
 	eval $var$dot /home/sourabh/work/dotfiles 
 done
 
-# get to the 
+# get to the dotfiles folder to reach a git 
+# directory else git commands wont work
 cd /home/sourabh/work/dotfiles
 
 # retrieves the current day,year for commit message
