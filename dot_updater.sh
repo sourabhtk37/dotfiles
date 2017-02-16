@@ -1,6 +1,6 @@
 #!/bin/zsh
-#dot_updater.sh
-#runs every 15 days and copies dot-files and push them to git.
+# dot_updater.sh
+# runs every 15 days and copies dot-files and push them to git.
 
 var="cp /home/sourabh/."
 
