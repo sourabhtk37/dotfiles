@@ -27,5 +27,8 @@ git commit --file template.txt
 # the end of the file
 rm template.txt
 
+# adds ssh passphrase to ssh-agent
+ssh-add
+
 # via ssh so won't ask for authentication
 git push origin master
