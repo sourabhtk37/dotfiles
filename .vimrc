@@ -7,8 +7,9 @@ runtime! debian.vim
 
 execute pathogen#infect()
 
-
 set background=dark
+
+set tabstop=4
 
 if has("syntax")
   syntax on
