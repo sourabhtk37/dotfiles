@@ -4,6 +4,9 @@
 
 var="cp /home/sourabh/."
 
+# change directory to a valid git folder
+chdir /home/sourabh/work/dotfiles
+
 # copies dotfiles into the current directory
 for dot in "tmux.conf" "gitconfig" "zshrc" "vimrc" "bashrc"
 do
