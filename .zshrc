@@ -83,9 +83,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias pmm="python manage.py makemigrations"
 alias pmmg="python manage.py migrate"
 alias pmr="python manage.py runserver"
-alias rm="rm -i"
-alias tmux="tmux -u"
-
+alias xo="xdg-open"
 # if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 #fi
