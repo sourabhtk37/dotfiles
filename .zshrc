@@ -84,6 +84,7 @@ alias pmm="python manage.py makemigrations"
 alias pmmg="python manage.py migrate"
 alias pmr="python manage.py runserver"
 alias xo="xdg-open"
+alias tmux="tmux -u"
 # if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 #fi
