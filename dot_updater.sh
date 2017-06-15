@@ -31,7 +31,7 @@ git commit --file template.txt
 rm template.txt
 
 # adds ssh passphrase to ssh-agent
-ssh-add
+ssh-add ~/.ssh/github_main
 
 # via ssh so won't ask for authentication
 git push origin master
