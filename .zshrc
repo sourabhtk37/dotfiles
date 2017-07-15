@@ -86,6 +86,9 @@ alias pmr="python manage.py runserver"
 alias xo="xdg-open"
 alias tmux="tmux -u"
 alias popcorn="/home/sourabh/Downloads/Popcorn-Time-0.3.10-Linux-64/Popcorn-Time"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias install="sudo apt-get install"
 # if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 #fi
