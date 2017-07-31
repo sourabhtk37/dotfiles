@@ -1,10 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = T K Sourabh
+#	email = sourabhtk37@gmail.com
 [user]
 	name = T K Sourabh
 	email = sourabhtk37@gmail.com
-[color]
-	ui = true
-[alias]
-	s = status -s
-	lg = log --graph --color --decorate --all
-[merge]
-	tool = meld
