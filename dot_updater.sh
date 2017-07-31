@@ -19,7 +19,7 @@ cd /home/sourabhtk37/work/dotfiles
 
 # retrieves the current day,year for commit message
 commit_message="date | cut -d ' ' -f 2,3,6"
-echo "dot files updated $(eval $commit_message)" >> template.txt
+echo "dot files updated $(eval $commit_message)" > template.txt
 
 # adds ssh passphrase to ssh-agent
 ssh-add ~/.ssh/github_main
@@ -27,11 +27,6 @@ ssh-add ~/.ssh/github_main
 # commits the changes
 git add .
 git commit --file template.txt
-
-# removal necessary else the commit_message won't 
-# be updated with new message as bash appends to
-# the end of the file
-rm template.txt
 
 # via ssh so won't ask for authentication
 git push origin master
