@@ -8,7 +8,7 @@ var="cp /home/sourabh/."
 chdir /home/sourabh/work/dotfiles
 
 # copies dotfiles into the current directory
-for dot in "tmux.conf" "gitconfig" "zshrc" "vimrc" "bashrc"
+for dot in "tmux.conf" "gitconfig" "zshrc" "vimrc" "bashrc" "i3_config"
 do
 	eval $var$dot /home/sourabh/work/dotfiles 
 done
