@@ -22,11 +22,9 @@ commit_message="date | cut -d ' ' -f 2,3,6"
 echo "dot files updated $(eval $commit_message)" > template.txt
 
 # adds ssh passphrase to ssh-agent
-ssh-add ~/.ssh/github_main
+# ssh-add ~/.ssh/github_main
 
-# commits the changes
+# commits and push changes
 git add .
 git commit --file template.txt
-
-# via ssh so won't ask for authentication
 git push origin master

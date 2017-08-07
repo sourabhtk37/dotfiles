@@ -162,13 +162,15 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-#bindsym XF86MonBrightnessUp exec xbacklight
+# Backlight control
+bindsym XF86MonBrightnessUp exec sh ~/.config/i3/backlight.sh -inc 20
+bindsym XF86MonBrightnessDown exec sh ~/.config/i3/backlight.sh -dec 20
 
 # Application shortcuts
 bindsym $mod+c exec google-chrome
 bindsym $mod+g exec geary
 
-set $Locker i3lock -i /home/sourabhtk37/Pictures/Screenshot from 2017-02-01 19-10-26.png && sleep 1
+set $Locker i3lock && sleep 1
 
 set $mode_system (l)lock  (e)logout  (s)suspend  (h)hibernate  (r)reboot  (Shift+s)shutdown
 
@@ -184,4 +186,6 @@ mode "$mode_system" {
 	bindsym Escape mode "default" 
 }
 
-Bindsym $mod+Escape mode "$mode_system"
+bindsym $mod+Escape mode "$mode_system"
+
+exec --no-startup-id redshift-gtk
