@@ -37,10 +37,10 @@ alias pmmg="python manage.py migrate"
 alias pmr="python manage.py runserver"
 alias xo="xdg-open"
 alias tmux="tmux -u"
-alias update="sudo apt update"
-alias upgrade="sudo apt upgrade"
-alias install="sudo apt install"
-
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias install="sudo apt-get install"
+alias apt="sudo aptitude"
 
 alias g='git'
 alias ga='git add'
@@ -105,4 +105,15 @@ alias gtv='git tag | sort -V'
 
 alias gplr='git pull --rebase -v'
 
-set pres /home/sourabhtk37/work/presentation/cmdl-parsing
+
+function pres 
+				cd ~/work/presentation/
+end
+
+function cs
+				cd ~/work/CodeShare/code_share; and source venv1/bin/activate.fish;
+end
+
+function ch
+		cd ~/work/channels/; and source ch-env/bin/activate.fish;
+end

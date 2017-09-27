@@ -6,3 +6,19 @@
 [user]
 	name = T K Sourabh
 	email = sourabhtk37@gmail.com
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red 
+	oldHighlight = red  52
+	newNormal = green 
+	newHighlight = green  22
+[color "diff"]
+	meta = blue
+	frag = black
+	commit = blue 
+	old = red 
+	new = green 
+	whitespace = red 
