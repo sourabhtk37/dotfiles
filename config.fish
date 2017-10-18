@@ -37,9 +37,10 @@ alias pmmg="python manage.py migrate"
 alias pmr="python manage.py runserver"
 alias xo="xdg-open"
 alias tmux="tmux -u"
-alias update="sudo apt-get update"
-alias upgrade="sudo apt-get upgrade"
-alias install="sudo apt-get install"
+alias update="sudo aptitude update"
+alias upgrade="sudo aptitude upgrade"
+alias install="sudo aptitude install"
+alias remove="sudo aptitude remove"
 alias apt="sudo aptitude"
 
 alias g='git'
